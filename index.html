@@ -44,20 +44,29 @@
 	  }
 </script>
 <style type="text/css">
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 4px !important;
-    padding-right: 4px !important;
+.col-sm-3, col-md-3 {
+	padding-left:6px;
+	padding-right:6px
 }
-.row {margin-left:6px !important; margin-right:6px !important }
 .thumbnail {
+	/*height:260px;*/
 	min-height:260px;
 }
 .caption-home {
 	color: #333333;
 	padding: 6px 8px;
 	position:relative;
+}
+.mTop210 {
+	top:210px;
+	position:absolute;
+}
+.mTop170 {
+	top:170px;
+	position:absolute;
+}
+h3, .h3 {
+	font-size: 20px;
 }
 .mTop10 {
 	margin-top:10px
@@ -72,29 +81,34 @@
 <!--<![endif]-->
 
 <div class="container">
-  <div class="row ie8  mTop10 "><a href="/index.html"><img src="https://www.hostedhash.com/images/hh_logo.gif" width="180" height="40"></a></div>
- <p class="bordertop1px pdtp10px grn"></p>
-
-  <div class="row fnt16 clearfix mTop10">
-   <div class="col-sm-12 col-md-12 column">
+  <div class="row mLR0 ie8  mTop10"><a href="/index.html"><img src="https://www.hostedhash.com/images/hh_logo.gif" width="180" height="40"></a></div>
+  <div class="row fnt16">
+    <div class="col-sm-12">
+      <h4>Login</h4>
       <form role="form" class="form-horizontal" method='post' action='index.php' onsubmit=' return validate();'>
         <div class="form-group">
-          <label for="inputUserName">Username</label>
-          <input type="text" name='username' placeholder="User Name" id="inputUserName" class="form-control input-sm" value=''>
+          <label class="col-sm-4 control-label" for="inputUserName">Username</label>
+          <div class="col-sm-8">
+            <input type="text" name='username' placeholder="User Name" id="inputUserName" class="form-control input-sm" value=''>
+          </div>
         </div>
         <div class="form-group">
-          <label for="inputPassword">Password</label>
-          <input type="password" name='passwd' placeholder="Password" id="inputPassword" class="form-control input-sm">
+          <label class="col-sm-4 control-label" for="inputPassword">Password</label>
+          <div class="col-sm-8">
+            <input type="password" name='passwd' placeholder="Password" id="inputPassword" class="form-control input-sm">
+          </div>
         </div>
-       <div class="form-group">
-        <input class="btn btn-warning" id="btn" type="submit" name="Login" value="Submit" /><br>
-        
-         <a href="https://www.hostedhash.com/forgotten-pass.html" class="fnt12">Forgot Password?</a></div>
+        <div class="form-group">
+          <label class="col-sm-4 control-label"></label>
+          <div class="col-sm-8">
+            <input class="btn btn-warning" id="btn" type="submit" name="Login" value="Submit" />
+          </div>
+        </div>
       </form>
-
+      <br>
     </div>
   </div>
-  <div class="row ie8">
+  <div class="row mLR0 ie8  mTop10">
     <p class="bordertop1px pdtp10px grn">&copy; <a href="http://www.hostedhash.com">HostedHash.com</a> 2014. <br />
       A <a href="http://www.trellian.com">Trellian</a> Backed Venture <br />
       All Rights Reserved.</p>
